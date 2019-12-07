@@ -5,6 +5,8 @@ services:
     volumes:
       - ./volumes/gekko/history:/usr/src/app/history
       - ./config.js:/usr/src/app/config.js
+      - ./exchange/wrappers:/usr/src/app/exchange/wrappers
+      - ./strategies:/usr/src/app/strategies
     links:
       - redis
 #      - postgresql
